@@ -75,14 +75,15 @@ python -m venv .venv
 .venv\Scripts\python -m etl.ingest_market_data
 .venv\Scripts\python -m etl.load_warehouse
 
-# Optional: backfill 30 days of history for a few major coins so charts
-# aren't empty on first run (takes a few minutes)
+# 5. Backfill history so charts and Market Leaders have data to show
+# (both need 2+ days of history; without this step they render empty
+# — everything else works with just step 4). Takes a few minutes.
 .venv\Scripts\python -m etl.backfill_market_history --days 30 --coins bitcoin,ethereum,solana,cardano,dogecoin
 
-# 5. Run the backend (http://localhost:8000, API docs at /docs)
+# 6. Run the backend (http://localhost:8000, API docs at /docs)
 .venv\Scripts\python -m uvicorn main:app --reload --port 8000
 
-# 6. Run the frontend (http://localhost:5173) — in a second terminal
+# 7. Run the frontend (http://localhost:5173) — in a second terminal
 cd frontend
 npm install
 npm run dev
