@@ -39,6 +39,10 @@ directly — all data flows through the warehouse and the backend API.
 No screenshots are committed to the repository yet. When they are added under
 `docs/screenshots/`, they will be referenced here with standard Markdown image links.
 
+## Demo Video
+
+Demo Video: <https://youtube.com/REPLACE_WITH_VIDEO>
+
 ## Technology Stack
 
 **Frontend**

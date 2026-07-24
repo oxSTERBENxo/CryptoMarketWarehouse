@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 .idea/
 .env
+
+# Private development notes, not part of the published repository
+answers/
