@@ -96,16 +96,6 @@ same `python -m ...` commands without the `.venv\Scripts\` prefix.
 
 [Watch the CryptoMarketWarehouse demo on YouTube](https://youtu.be/DnljQKOUenw)
 
-## Additional Documentation
-
-Detailed documentation is available in [`explanations/`](explanations/), including
-[`ARCHITECTURE.md`](explanations/ARCHITECTURE.md),
-[`DATA_WAREHOUSE_MODEL.md`](explanations/DATA_WAREHOUSE_MODEL.md),
-[`ETL_GUIDE.md`](explanations/ETL_GUIDE.md),
-[`API.md`](explanations/API.md),
-[`AI_FEATURES.md`](explanations/AI_FEATURES.md), and
-[`LOCAL_DEVELOPMENT.md`](explanations/LOCAL_DEVELOPMENT.md).
-
 ## License
 
 No license file is currently included. This project was developed for a university course and
