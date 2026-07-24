@@ -58,7 +58,7 @@ the pattern in `ai/groq_provider.py`.
 
 ```powershell
 # 1. Clone and configure
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/oxSTERBENxo/CryptoMarketWarehouse.git)
 cd CryptoMarketWarehouse
 Copy-Item .env.example .env
 Copy-Item frontend\.env.example frontend\.env
