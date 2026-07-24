@@ -1,0 +1,28 @@
+.chart-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: 12px 8px 4px;
+  min-width: 0;
+}
+
+.metric-chart-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.metric-chart-heading h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.metric-chart-subtitle {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

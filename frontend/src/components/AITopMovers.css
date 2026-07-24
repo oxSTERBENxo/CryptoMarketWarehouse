@@ -1,0 +1,29 @@
+.ai-top-movers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.ai-top-movers__column {
+  min-width: 0;
+}
+
+.ai-top-movers__heading {
+  margin: 0 0 6px;
+  font-size: 13px;
+}
+
+.ai-top-movers__heading--gain {
+  color: var(--success);
+}
+
+.ai-top-movers__heading--loss {
+  color: var(--danger);
+}
+
+@media (max-width: 640px) {
+  .ai-top-movers {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

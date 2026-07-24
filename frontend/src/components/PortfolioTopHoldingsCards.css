@@ -1,0 +1,84 @@
+.portfolio-top-holdings {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.portfolio-top-holding-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.portfolio-top-holding-card__coin {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text-h);
+}
+
+.portfolio-top-holding-card__coin:hover {
+  text-decoration: underline;
+}
+
+.portfolio-top-holding-card__symbol {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.portfolio-top-holding-card__name {
+  font-size: 12px;
+  color: var(--text);
+}
+
+.portfolio-top-holding-card__allocation {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-h);
+  line-height: 1.1;
+}
+
+.portfolio-top-holding-card__allocation-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text);
+  margin-top: 2px;
+}
+
+.portfolio-top-holding-card__stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.portfolio-top-holding-card__stats dt {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.portfolio-top-holding-card__stats dd {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.portfolio-top-holdings__empty {
+  color: var(--text);
+  font-size: 14px;
+}

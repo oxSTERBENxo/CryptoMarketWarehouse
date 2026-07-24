@@ -46,8 +46,15 @@ directly.
 
 ## Installation and Running
 
-Prerequisites: Python 3, Node.js, and Docker Desktop. Optional: [Ollama](https://ollama.com/)
-or a Groq API key for the AI features.
+Prerequisites: Python 3, Node.js, and Docker Desktop.
+
+The dashboard, analytics, portfolio, and paper-trading features all work without any AI setup.
+AI insights are optional and require a provider: either [Ollama](https://ollama.com/) running
+locally (free, no key needed) or a [Groq](https://groq.com/) API key (Groq's free tier is
+usually enough for this project). Set `AI_PROVIDER` and the matching variables in `.env` — see
+`.env.example` for the available options. Only Ollama and Groq are implemented out of the box;
+using Gemini, OpenAI, or another provider would require adding a new provider module following
+the pattern in `ai/groq_provider.py`.
 
 ```powershell
 # 1. Clone and configure

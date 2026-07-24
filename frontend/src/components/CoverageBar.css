@@ -1,0 +1,16 @@
+.coverage-bar {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.coverage-bar__count {
+  font-weight: 600;
+}
+
+.coverage-bar__range {
+  opacity: 0.75;
+}

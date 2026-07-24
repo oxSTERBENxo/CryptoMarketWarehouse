@@ -1,0 +1,11 @@
+.profit-positive {
+  color: var(--success);
+}
+
+.profit-negative {
+  color: var(--danger);
+}
+
+.profit-neutral {
+  color: var(--text-h);
+}

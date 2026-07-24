@@ -1,0 +1,71 @@
+.paper-trading-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.paper-trading-tab__disclaimer {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--accent-bg);
+  padding: 10px 14px;
+}
+
+.paper-trading-tab__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.paper-trading-tab__header h2 {
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+
+.paper-trading-tab__return {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.paper-trading-tab__actions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.paper-trading-tab__performers {
+  font-size: 16px !important;
+}
+
+.paper-trading-tab__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.paper-trading-tab__side-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: 18px 20px;
+}
+
+.paper-trading-tab__side-card h3 {
+  margin: 0 0 14px;
+  font-size: 16px;
+  color: var(--text-h);
+}
+
+@media (max-width: 900px) {
+  .paper-trading-tab__grid {
+    grid-template-columns: 1fr;
+  }
+}

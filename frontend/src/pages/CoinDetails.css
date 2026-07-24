@@ -1,0 +1,161 @@
+.coin-details {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.coin-details > .back-link {
+  align-self: flex-start;
+}
+
+.coin-details__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: 20px 24px;
+}
+
+.coin-details__title {
+  font-size: 24px;
+  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.coin-details__badge {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border-radius: 999px;
+  padding: 3px 10px;
+  letter-spacing: 0.02em;
+}
+
+.coin-details__price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.coin-details__price {
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--text-h);
+  line-height: 1;
+}
+
+.coin-details__change {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.coin-details__meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0;
+}
+
+.coin-details__meta-row dt {
+  font-size: 12px;
+  color: var(--text);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.coin-details__meta-row dd {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.coin-details__range-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.coin-details__mode-badge {
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 4px 10px;
+  letter-spacing: 0.02em;
+}
+
+.coin-details__mode-badge--daily {
+  color: var(--text);
+  background: var(--accent-bg);
+}
+
+.coin-details__mode-badge--intraday {
+  color: #fff;
+  background: #ea580c;
+}
+
+.coin-details__coverage {
+  margin: -8px 0 0;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.coin-details__summary-grid {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.coin-details__summary-grid .overview-card dd {
+  font-size: 18px;
+}
+
+.coin-details__charts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .coin-details__summary-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .coin-details__charts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .coin-details {
+    padding: 16px 12px 48px;
+    gap: 16px;
+  }
+
+  .coin-details__header {
+    padding: 16px 18px;
+  }
+
+  .coin-details__title {
+    font-size: 20px;
+  }
+
+  .coin-details__price {
+    font-size: 26px;
+  }
+
+  .coin-details__summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

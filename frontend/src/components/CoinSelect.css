@@ -1,0 +1,81 @@
+.coin-select {
+  position: relative;
+}
+
+.coin-select input {
+  width: 100%;
+}
+
+.coin-select__options {
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  max-height: 220px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 4px;
+  list-style: none;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.coin-select__option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  font-size: 14px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--text-h);
+  cursor: pointer;
+}
+
+.coin-select__option:hover,
+.coin-select__option--selected {
+  background: var(--accent-bg);
+}
+
+.coin-select__option-identity {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.coin-select__option-name {
+  color: var(--text-h);
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.coin-select__option-symbol {
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+
+.coin-select__option-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.coin-select__status {
+  padding: 7px 10px;
+  font-size: 13px;
+  color: var(--text);
+}

@@ -1,0 +1,54 @@
+.market-leaders {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.market-leaders__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.market-leaders__title {
+  font-size: 28px;
+  margin: 0;
+}
+
+.market-leaders__subtitle {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.market-leaders__range-row {
+  display: flex;
+}
+
+.market-leaders__lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 800px) {
+  .market-leaders__lists {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .market-leaders {
+    padding: 16px 12px 48px;
+    gap: 20px;
+  }
+
+  .market-leaders__title {
+    font-size: 22px;
+  }
+}

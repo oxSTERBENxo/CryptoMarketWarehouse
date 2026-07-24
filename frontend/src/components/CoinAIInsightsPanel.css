@@ -1,0 +1,10 @@
+/* AIInsightsPanel.css's 3-column grid doesn't fit 5 sections -- wrap responsively instead. */
+.coin-ai-insights {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+@media (max-width: 768px) {
+  .coin-ai-insights {
+    grid-template-columns: 1fr;
+  }
+}

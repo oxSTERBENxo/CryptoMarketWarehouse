@@ -1,0 +1,68 @@
+.ai-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ai-skeleton__row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ai-skeleton__badge {
+  width: 90px;
+  height: 28px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.ai-skeleton__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.ai-skeleton__card {
+  height: 64px;
+  border-radius: 10px;
+}
+
+.ai-skeleton__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ai-skeleton__line {
+  height: 14px;
+  border-radius: 6px;
+}
+
+.ai-skeleton__line--wide {
+  flex: 1;
+  height: 18px;
+}
+
+.ai-skeleton__badge,
+.ai-skeleton__card,
+.ai-skeleton__line {
+  background: linear-gradient(90deg, var(--border) 25%, var(--surface) 50%, var(--border) 75%);
+  background-size: 200% 100%;
+  animation: ai-skeleton-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes ai-skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .ai-skeleton__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

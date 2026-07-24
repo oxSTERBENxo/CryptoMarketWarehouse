@@ -1,0 +1,9 @@
+.holdings-table__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.holdings-table__actions .modal-button {
+  padding: 4px 10px;
+  font-size: 13px;
+}

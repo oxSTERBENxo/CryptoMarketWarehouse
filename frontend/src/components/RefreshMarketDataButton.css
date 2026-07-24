@@ -1,0 +1,63 @@
+.refresh-market-data {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.refresh-market-data__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), #4f46e5);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.refresh-market-data__button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(109, 40, 217, 0.25);
+}
+
+.refresh-market-data__button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.refresh-market-data__button .status-spinner {
+  border-color: rgba(255, 255, 255, 0.4);
+  border-top-color: #fff;
+}
+
+.refresh-market-data__status {
+  font-size: 13px;
+  font-weight: 500;
+  animation: refresh-status-in 0.2s ease;
+}
+
+.refresh-market-data__status--success {
+  color: var(--success);
+}
+
+.refresh-market-data__status--error {
+  color: var(--danger);
+}
+
+@keyframes refresh-status-in {
+  from {
+    opacity: 0;
+    transform: translateY(-2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

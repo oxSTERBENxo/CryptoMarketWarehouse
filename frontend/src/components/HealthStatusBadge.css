@@ -1,0 +1,27 @@
+.health-status-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.health-status-badge--healthy {
+  background: var(--success-bg);
+  color: var(--success);
+}
+
+.health-status-badge--warning {
+  background: var(--warning-bg);
+  color: var(--warning);
+}
+
+.health-status-badge--error {
+  background: var(--danger-bg);
+  color: var(--danger);
+}
+
+.health-status-badge--unknown {
+  background: var(--border);
+  color: var(--text);
+}

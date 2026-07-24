@@ -1,0 +1,70 @@
+/* Results table: sticky header while scrolling a long result list, sortable column headers,
+ * and a pagination footer. Base table styling comes from Table.css. */
+
+.explorer-table-scroll {
+  max-height: 560px;
+  overflow-y: auto;
+}
+
+.explorer-table-scroll thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--surface);
+}
+
+.explorer-sort-header {
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.explorer-sort-header:hover,
+.explorer-sort-header[data-active="true"] {
+  color: var(--accent);
+}
+
+.explorer-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.explorer-pagination__info {
+  font-size: 13px;
+  color: var(--text);
+}
+
+.explorer-pagination__buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.explorer-pagination__button {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-h);
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 120ms ease;
+}
+
+.explorer-pagination__button:hover:not(:disabled) {
+  background: var(--accent-bg);
+}
+
+.explorer-pagination__button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}

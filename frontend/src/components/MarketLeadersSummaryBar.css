@@ -1,0 +1,8 @@
+.leaders-summary__grid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.leaders-summary__grid .overview-card dd {
+  font-size: 18px;
+  overflow-wrap: break-word;
+}

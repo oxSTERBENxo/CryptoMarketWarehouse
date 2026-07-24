@@ -1,0 +1,613 @@
+{
+  "app": {
+    "title": "CryptoMarketWarehouse"
+  },
+  "nav": {
+    "dashboard": "Почетна",
+    "marketLeaders": "Пазарни лидери",
+    "analyticsExplorer": "Аналитика",
+    "portfolio": "Портфолио",
+    "settings": "Поставки"
+  },
+  "common": {
+    "loading": "Се вчитува...",
+    "retry": "Обиди се пак",
+    "refresh": "Освежи",
+    "noData": "Сè уште нема достапни податоци.",
+    "cancel": "Откажи",
+    "save": "Зачувај",
+    "close": "Затвори",
+    "closeDialog": "Затвори прозорец",
+    "delete": "Избриши",
+    "deleting": "Се брише...",
+    "edit": "Уреди",
+    "add": "Додај",
+    "confirm": "Потврди",
+    "back": "Назад",
+    "selectDateRange": "Избери временски период",
+    "somethingWentWrong": "Се случи грешка.",
+    "openDetails": "Отвори детали за {{name}}",
+    "saving": "Се зачувува...",
+    "create": "Создај"
+  },
+  "table": {
+    "coin": "Крипто",
+    "symbol": "Симбол",
+    "price": "Цена",
+    "change24h": "Промена 24Ч",
+    "marketCap": "Пазарна капитализација",
+    "coingeckoRank": "CoinGecko ранг",
+    "volume24h": "Обем 24ч",
+    "rank": "Ранг"
+  },
+  "dashboard": {
+    "overview": {
+      "title": "Преглед на пазарот",
+      "lastRefreshed": "Последно освежено",
+      "coinsTracked": "Следени криптовалути",
+      "totalMarketCap": "Вкупна пазарна капитализација",
+      "totalVolume": "Вкупен обем (24ч)"
+    },
+    "topMarketCap": {
+      "title": "Топ по пазарна капитализација",
+      "caption": "Криптовалути рангирани по пазарна капитализација"
+    },
+    "topVolume": {
+      "title": "Топ по обем (24ч)",
+      "caption": "Криптовалути рангирани по 24-часовен обем на тргување"
+    },
+    "latestSnapshot": {
+      "title": "Последна снимка",
+      "caption": "Последна снимена состојба за секоја следена криптовалута"
+    }
+  },
+  "coinSelect": {
+    "loading": "Се вчитуваат криптовалути...",
+    "searchPlaceholder": "Пребарај крипто по име или симбол...",
+    "noMatches": "Нема пронајдени криптовалути."
+  },
+  "takeSnapshot": {
+    "cta": "Земи нова снимка",
+    "fetching": "Се преземаат најновите пазарни податоци...",
+    "lastRefreshed": "Последно освежено",
+    "latestDailySnapshot": "Последна дневна снимка",
+    "intradaySnapshotsToday": "Внатре-дневни снимки денес",
+    "failedPrefix": "Снимката не успеа: ",
+    "unknownError": "Непозната грешка.",
+    "partialErrors": "Снимката е завршена со делумни грешки.",
+    "dailyAndIntradayAdded": "Успешно се додадени нови дневни и внатре-дневни снимки.",
+    "intradayAdded": "Додадена е нова внатре-дневна снимка; денешната дневна снимка веќе постоеше.",
+    "refreshed": "Пазарните податоци се освежени."
+  },
+  "refreshMarketData": {
+    "cta": "Освежи пазарни податоци",
+    "refreshing": "Се освежува...",
+    "updated": "✔ Успешно освежено",
+    "noNewData": "Нема нови пазарни податоци."
+  },
+  "recoveryBanner": {
+    "running_one": "Се обновува {{total}} недостасувачка дневна снимка: {{done}} од {{total}} завршени",
+    "running_other": "Се обновуваат {{total}} недостасувачки дневни снимки: {{done}} од {{total}} завршени",
+    "partialFailure_one": "Обновувањето на историски податоци заврши со {{count}} проблем.",
+    "partialFailure_other": "Обновувањето на историски податоци заврши со {{count}} проблеми.",
+    "upToDate": "Историските пазарни податоци се ажурирани."
+  },
+  "schedulerStatus": {
+    "title": "Собирање податоци",
+    "latestSnapshot": "Последна снимка на складиштето",
+    "automaticCollection": "Автоматско собирање",
+    "enabled": "Вклучено",
+    "disabled": "Исклучено",
+    "nextRun": "Следно извршување"
+  },
+  "notFound": {
+    "title": "Страницата не е пронајдена",
+    "message": "Страницата што ја барате не постои.",
+    "backLink": "Назад кон почетна"
+  },
+  "dateRange": {
+    "today": "Денес",
+    "all": "Сите"
+  },
+  "coverageBar": {
+    "qualifyingCoins_one": "{{count}} квалификувана криптовалута",
+    "qualifyingCoins_other": "{{count}} квалификувани криптовалути"
+  },
+  "marketLeaders": {
+    "title": "Пазарни лидери",
+    "subtitle": "Вистински добивки и загуби пресметани од историјата на складиштето — ништо не е проценето.",
+    "loading": "Се вчитуваат пазарните лидери...",
+    "snapshotTitle": "Пазарна состојба",
+    "totalTrackedCoins": "Вкупно следени криптовалути",
+    "latestUpdate": "Последно ажурирање",
+    "todaysBestPerformer": "Најдобра денешна изведба",
+    "todaysWorstPerformer": "Најлоша денешна изведба",
+    "averageMarketMovement": "Просечно пазарно движење",
+    "noIntradayDataToday": "Сè уште нема внатре-дневни податоци денес",
+    "highestGainer": "Најголем добитник",
+    "largestLoser": "Најголем губитник",
+    "highestVolume": "Најголем обем",
+    "highestRanked": "Највисоко рангирана",
+    "mostVolatile": "Најнестабилна",
+    "volume24hSubtitle": "24-часовен обем на тргување",
+    "byMarketCap": "по пазарна капитализација",
+    "volatilitySubtitle": "распон висок-низок за {{period}}",
+    "over": "за {{period}}",
+    "noDataForPeriod": "Сè уште нема податоци за овој период.",
+    "noData": "Сè уште нема податоци.",
+    "noDataForPeriodShort": "Нема достапни податоци за овој период.",
+    "topGainers": "Најголеми добитници",
+    "biggestLosers": "Најголеми губитници",
+    "emptyToday": "Сè уште нема вчитано внатре-дневни набљудувања денес. Изврши ingest_intraday_market_data.py, или почекај го следното закажано собирање, па освежи.",
+    "emptyOther": "Сè уште нема доволно историски податоци во овој опсег за рангирање на добитници и губитници.",
+    "periodLong": {
+      "today": "денес",
+      "7d": "7 дена",
+      "30d": "30 дена",
+      "90d": "90 дена",
+      "1y": "1 година"
+    }
+  },
+  "explorer": {
+    "title": "Аналитика",
+    "subtitle": "Интерактивно пребарување на историски податоци од складиштето — секоја бројка е пресметана од реални вчитани набљудувања, ништо не е проценето.",
+    "recent": "Неодамнешни:",
+    "formLabel": "Конфигурација на анализа",
+    "datePresetsLabel": "Готови временски периоди",
+    "datePresets": {
+      "7d": "7Д",
+      "30d": "30Д",
+      "90d": "90Д",
+      "1y": "1Г",
+      "allAvailable": "Сите достапни"
+    },
+    "fields": {
+      "from": "Од",
+      "to": "До",
+      "metric": "Метрика",
+      "analysisType": "Тип на анализа",
+      "sortBy": "Сортирај по",
+      "analysisDefault": "Стандардно за анализата",
+      "direction": "Насока",
+      "descending": "Опаѓачки",
+      "ascending": "Растечки",
+      "resultsPerPage": "Резултати по страница"
+    },
+    "filters": {
+      "summary": "Дополнителни филтри",
+      "minMarketCap": "Мин. пазарна капитализација ($)",
+      "maxMarketCap": "Макс. пазарна капитализација ($)",
+      "minAvgVolume": "Мин. просечен обем ($)",
+      "minRank": "Најдобар ранг (мин)",
+      "maxRank": "Најлош ранг (макс)",
+      "minPrice": "Мин. цена ($)",
+      "maxPrice": "Макс. цена ($)"
+    },
+    "actions": {
+      "running": "Се извршува...",
+      "runAnalysis": "Изврши анализа",
+      "resetFilters": "Ресетирај филтри",
+      "exporting": "Се извезува...",
+      "exportCsv": "Извези CSV"
+    },
+    "errors": {
+      "bothDatesRequired": "Двата датуми се задолжителни.",
+      "fromAfterTo": "Датумот „Од“ не смее да биде подоцна од датумот „До“.",
+      "thresholdRequired": "{{label}} е задолжително за оваа анализа.",
+      "exportFailed": "Извезувањето не успеа."
+    },
+    "emptyBeforeRun": "Конфигурирајте анализа погоре и притиснете „Изврши анализа“ за да го пребарате складиштето.",
+    "loadingRun": "Се извршува анализата...",
+    "summary": {
+      "resultsFound": "Пронајдени резултати",
+      "averageChange": "Просечна промена",
+      "largestIncrease": "Најголем пораст",
+      "largestDecrease": "Најголем пад",
+      "averageVolume": "Просечен обем"
+    },
+    "emptyWithFilters": "Ниту една криптовалута не одговара на оваа анализа со тековните дополнителни филтри. Обидете се со поширок временски период, понизок праг, или отстранете некои филтри.",
+    "emptyNoFilters": "Ниту една криптовалута не одговара на оваа анализа во избраниот временски период. Обидете се со поширок период или понизок праг.",
+    "metrics": {
+      "price": "Цена",
+      "volume": "Обем",
+      "marketCapRank": "Ранг по пазарна капитализација",
+      "volatility": "Нестабилност"
+    },
+    "analyses": {
+      "priceIncreasedByPercent": {
+        "label": "Порасна за најмалку X%",
+        "thresholdLabel": "Минимален пораст (%)",
+        "thresholdPlaceholder": "на пр. 5"
+      },
+      "priceDecreasedByPercent": {
+        "label": "Падна за најмалку X%",
+        "thresholdLabel": "Минимален пад (%)",
+        "thresholdPlaceholder": "на пр. 10"
+      },
+      "priceIncreasedByAmount": {
+        "label": "Порасна за најмалку $X",
+        "thresholdLabel": "Минимален пораст ($)",
+        "thresholdPlaceholder": "на пр. 1000"
+      },
+      "priceDecreasedByAmount": {
+        "label": "Падна за најмалку $X",
+        "thresholdLabel": "Минимален пад ($)",
+        "thresholdPlaceholder": "на пр. 1000"
+      },
+      "priceTopN": { "label": "Најголеми добитници" },
+      "priceBottomN": { "label": "Најголеми губитници" },
+      "volumeTopN": { "label": "Најголем просечен обем" },
+      "rankImprovedBy": {
+        "label": "Рангот се подобри за најмалку X места",
+        "thresholdLabel": "Минимално подобрување на местата",
+        "thresholdPlaceholder": "на пр. 3"
+      },
+      "rankDeclinedBy": {
+        "label": "Рангот се влоши за најмалку X места",
+        "thresholdLabel": "Минимално влошување на местата",
+        "thresholdPlaceholder": "на пр. 3"
+      },
+      "volatilityTopN": { "label": "Најнестабилни" },
+      "volatilityBottomN": { "label": "Најстабилни" }
+    },
+    "sort": {
+      "percentChange": "% Промена",
+      "dollarChange": "$ Промена",
+      "endPrice": "Крајна цена",
+      "avgVolume": "Просечен обем",
+      "rankChange": "Промена на ранг",
+      "marketCap": "Пазарна капитализација",
+      "volatility": "Нестабилност"
+    },
+    "columns": {
+      "coin": "Крипто",
+      "startPrice": "Почетна цена",
+      "endPrice": "Крајна цена",
+      "dollarChange": "$ Промена",
+      "percentChange": "% Промена",
+      "avgVolume": "Прос. обем",
+      "startRank": "Почетен ранг",
+      "endRank": "Краен ранг",
+      "rankChange": "Промена на ранг",
+      "volatility": "Нестабилност",
+      "marketCap": "Пазарна капитализација"
+    },
+    "results": {
+      "heading": "Резултати од анализата",
+      "caption": "Криптовалути што одговараат на избраната анализа",
+      "openDetails": "Отвори детали за {{name}} за анализираниот период",
+      "showing": "Прикажани {{start}}–{{end}} од {{total}} резултати",
+      "previous": "← Претходно",
+      "next": "Следно →"
+    }
+  },
+  "portfolio": {
+    "tabsLabel": "Приказ на портфолио",
+    "tabs": {
+      "paperTrading": "Симулирано тргување",
+      "manualHoldings": "Рачни позиции",
+      "aiPortfolioReview": "АИ преглед на портфолио"
+    },
+    "summary": {
+      "totalValue": "Вкупна вредност",
+      "totalCostBasis": "Вкупна набавна вредност",
+      "unrealizedProfitLoss": "Нереализирана добивка/загуба",
+      "profitPercent": "Добивка %"
+    },
+    "holdingsTable": {
+      "caption": "Позиции во ова портфолио",
+      "quantity": "Количина",
+      "averageBuyPrice": "Просечна набавна цена",
+      "currentPrice": "Тековна цена",
+      "currentValue": "Тековна вредност",
+      "profitLoss": "Добивка/Загуба",
+      "actions": "Дејства",
+      "priceUnavailable": "Цената не е достапна"
+    },
+    "forms": {
+      "nameRequired": "Името е задолжително.",
+      "renamePortfolio": "Преименувај портфолио",
+      "createPortfolio": "Создај портфолио",
+      "name": "Име",
+      "descriptionOptional": "Опис (опционално)",
+      "selectCoin": "Изберете криптовалута.",
+      "quantityMustBePositive": "Количината мора да биде поголема од 0.",
+      "priceMustBeNonNegative": "Просечната набавна цена мора да биде нула или повеќе.",
+      "editHolding": "Уреди позиција",
+      "addHolding": "Додај позиција",
+      "averageBuyPriceUsd": "Просечна набавна цена (USD)"
+    },
+    "manual": {
+      "noPortfolioYet": "Сè уште немате портфолио.",
+      "rename": "Преименувај",
+      "deletePortfolio": "Избриши портфолио",
+      "holdings": "Позиции",
+      "noHoldingsYet": "Сè уште нема позиции. Додајте ја вашата прва криптовалута за да ја следите вредноста.",
+      "deletePortfolioConfirm": "Да се избрише „{{name}}“ и сите негови позиции? Ова не може да се врати.",
+      "deleteHolding": "Избриши позиција",
+      "deleteHoldingConfirm": "Да се отстрани {{name}} ({{symbol}}) од ова портфолио?"
+    },
+    "paper": {
+      "disclaimer": "Само симулирано тргување — не се користат реални пари, и ништо на оваа страница не претставува финансиски совет.",
+      "loadingAccount": "Се вчитува сметката за симулирано тргување...",
+      "totalReturn": "Вкупен принос",
+      "buy": "Купи",
+      "sell": "Продај",
+      "resetAccount": "Ресетирај сметка",
+      "totalEquity": "Вкупна вредност",
+      "availableCash": "Достапни готовина",
+      "investedAmount": "Инвестиран износ",
+      "realizedPl": "Реализирана добивка/загуба",
+      "unrealizedPl": "Нереализирана добивка/загуба",
+      "bestWorstPerformer": "Најдобра / најлоша изведба",
+      "allocation": "Распределба",
+      "achievements": "Достигнувања",
+      "noHoldingsYet": "Сè уште нема позиции. Купете ја вашата прва криптовалута за да ја започнете симулацијата.",
+      "transactionHistory": "Историја на трансакции",
+      "noTradesYet": "Сè уште нема трансакции.",
+      "resetConfirm": "Ова ги брише сите симулирани трансакции и го враќа почетниот готовински салдо. Ова не може да се врати.",
+      "cash": "Готовина",
+      "holdingsCaption": "Тековни позиции за симулирано тргување",
+      "averageCost": "Просечна цена",
+      "buyMore": "Купи повеќе",
+      "transactionsCaption": "Историја на трансакции за симулирано тргување",
+      "time": "Време",
+      "type": "Тип",
+      "executionPrice": "Извршна цена",
+      "totalValue": "Вкупна вредност"
+    },
+    "trade": {
+      "buyTitle": "Купување (симулирано)",
+      "sellTitle": "Продавање (симулирано)",
+      "costExceedsCash": "Проценетата цена ја надминува достапната готовина.",
+      "exceedsHoldings": "Го надминува тековното количество.",
+      "currentPrice": "Тековна цена",
+      "estimatedCost": "Проценета цена",
+      "estimatedProceeds": "Проценет приход",
+      "youHold": "Поседувате",
+      "submitting": "Се испраќа..."
+    },
+    "achievements": {
+      "firstTrade": { "label": "Прва трансакција", "description": "Извршете ја вашата прва купопродажба." },
+      "diversified": { "label": "Диверзифицирано", "description": "Поседувајте 3 или повеќе различни средства одеднаш." },
+      "diamondHands": {
+        "label": "Цврсти раце",
+        "description": "Задржете едно средство {{days}}+ дена без целосно да го продадете."
+      },
+      "profitablePortfolio": {
+        "label": "Профитабилно портфолио",
+        "description": "Комбинираната реализирана и нереализирана добивка е позитивна."
+      },
+      "fiveTrades": { "label": "Пет завршени трансакции", "description": "Извршете вкупно 5 или повеќе трансакции." },
+      "balancedPortfolio": {
+        "label": "Балансирано портфолио",
+        "description": "Ниту едно средство не надминува 50% од вкупната вредност."
+      }
+    },
+    "health": {
+      "title": "Индекс на здравје на портфолиото",
+      "disclaimer": "Едукативна хеуристика заснована на диверзификација и ризик — не претставува финансиски совет.",
+      "diversification": {
+        "label": "Диверзификација",
+        "detail_one": "{{count}} средство во сопственост (цел: {{target}}+)",
+        "detail_other": "{{count}} средства во сопственост (цел: {{target}}+)"
+      },
+      "concentration": {
+        "label": "Ризик од концентрација",
+        "detail": "Најголемата позиција е {{percent}}% од вредноста"
+      },
+      "cashReserve": {
+        "label": "Готовинска резерва",
+        "detail": "{{percent}}% држено во готовина (здрав опсег: {{min}}-{{max}}%)"
+      },
+      "profitablePositions": {
+        "label": "Профитабилни позиции",
+        "detail": "{{profitable}} од {{total}} позиции се во добивка",
+        "noPositions": "Нема отворени позиции"
+      },
+      "assetCount": {
+        "label": "Поседувани средства",
+        "detail": "{{count}} од {{target}}+ целни средства"
+      }
+    }
+  },
+  "chart": {
+    "overTime": "{{title}} низ времето",
+    "insufficientData": "Сè уште нема доволно валидни набљудувања за да се прикаже тренд."
+  },
+  "coinDetails": {
+    "customRange": "Прилагодено",
+    "loadingIntraday": "Се вчитуваат денешните внатре-дневни податоци...",
+    "loadingHistory": "Се вчитува историјата на криптовалутата...",
+    "latestDailySnapshot": "Последна дневна снимка",
+    "intraday": "Внатре-дневно",
+    "daily": "Дневно",
+    "emptyToday": "Сè уште нема внатре-дневни набљудувања денес. Извршете ingest_intraday_market_data.py или почекајте го следното закажано собирање.",
+    "emptyDaily": "Нема достапни историски податоци за избраниот период.",
+    "periodMin": "Минимум за периодот",
+    "periodMax": "Максимум за периодот",
+    "periodAverage": "Просек за периодот",
+    "observations": "Набљудувања",
+    "firstObservation": "Прво набљудување",
+    "firstSnapshot": "Прва снимка",
+    "latestObservation": "Последно набљудување",
+    "latestSnapshot": "Последна снимка",
+    "priceChartTitle": "Цена (USD)",
+    "volumeChartTitle": "Обем 24ч",
+    "volumeChartIntradaySubtitle": "24-часовен обем добиен од API-то, забележан во секој временски момент — не обем истргуван по интервал",
+    "priceSubtitle": "{{change}} за {{period}}",
+    "periods": {
+      "today": "денес",
+      "custom": "избраниот период",
+      "all": "целото време",
+      "7d": "7 дена",
+      "30d": "30 дена",
+      "90d": "90 дена",
+      "1y": "1 година"
+    },
+    "insufficientHistory": {
+      "onlyObservation": "Единствено набљудување во евиденцијата",
+      "note_one": "На графиконите им требаат најмалку 2 дневни снимки за да прикажат тренд — потребен е уште {{count}} ден историја. Извршете го backfill-процесот или почекајте ја следната закажана снимка.",
+      "note_other": "На графиконите им требаат најмалку 2 дневни снимки за да прикажат тренд — потребни се уште {{count}} дена историја. Извршете го backfill-процесот или почекајте ја следната закажана снимка.",
+      "intradayNote": "На внатре-дневните графикони им требаат најмалку 2 набљудувања собрани денес за да прикажат тренд. Извршете ingest_intraday_market_data.py повторно наскоро, или почекајте го следното закажано собирање."
+    },
+    "coverage": {
+      "todayNone": "Сè уште нема собрани внатре-дневни набљудувања денес.",
+      "todayWithCount_one": "Внатре-дневни податоци собрани од {{first}} до {{latest}} ({{formattedCount}} набљудување).",
+      "todayWithCount_other": "Внатре-дневни податоци собрани од {{first}} до {{latest}} ({{formattedCount}} набљудувања).",
+      "allAvailable_one": "Прикажано е сето {{formattedCount}} достапно дневно набљудување.",
+      "allAvailable_other": "Прикажани се сите {{formattedCount}} достапни дневни набљудувања.",
+      "partial": "Само {{formattedCount}} од {{requested}} побарани дневни набљудувања се моментално достапни.",
+      "full": "Прикажани се сите {{requested}} побарани дневни набљудувања."
+    }
+  },
+  "ai": {
+    "common": {
+      "refresh": "Освежи",
+      "tryAgain": "Обиди се пак",
+      "provider": "Провајдер: {{provider}}",
+      "model": "Модел: {{model}}",
+      "generatedAt": "Генерирано: {{time}}",
+      "generationTime": "Време на генерирање: {{seconds}}с"
+    },
+    "marketSummary": {
+      "title": "АИ пазарно резиме",
+      "noSummary": "Нема генерирано резиме.",
+      "generateError": "Не можеше да се генерира резиме: {{error}}",
+      "generating": "Се генерира резиме...",
+      "generate": "Генерирај резиме",
+      "skeletonLabel": "Се генерира пазарно резиме",
+      "refreshError": "Не можеше да се освежи: {{error}}. Подолу е прикажано последното генерирано резиме.",
+      "topMovers": "Најголеми движења",
+      "tradingActivity": "Активност на тргување",
+      "aiInsights": "АИ увиди"
+    },
+    "overview": {
+      "direction": {
+        "positive": "Позитивно",
+        "negative": "Негативно",
+        "mixed": "Мешано",
+        "neutral": "Неутрално"
+      },
+      "avgChange24h": "Прос. промена 24ч",
+      "gainers": "Добитници",
+      "losers": "Губитници",
+      "unchanged": "Непроменети",
+      "tracked": "Следени",
+      "snapshot": "Снимка",
+      "totalMarketCap": "Вкупна пазарна капитализација",
+      "totalVolume24h": "Вкупен обем на тргување (24ч)",
+      "averageChange24h": "Просечна промена (24ч)",
+      "gainersVsLosers": "Добитници наспроти губитници"
+    },
+    "attention": {
+      "title": "Криптовалути што привлекуваат внимание",
+      "empty": "Моментално ниту една криптовалута не се издвојува според овие мерки.",
+      "disclaimer": "Индикаторите на внимание ја опишуваат тековната пазарна активност и не се препораки за купување.",
+      "categories": {
+        "positive_momentum": "Најсилен позитивен момент",
+        "most_active": "Најактивно тргувани",
+        "unusual_activity": "Невообичаена активност"
+      }
+    },
+    "topMovers": {
+      "gainers": "Најголеми добитници",
+      "losers": "Најголеми губитници",
+      "noGainers": "Нема добитници во оваа снимка.",
+      "noLosers": "Нема губитници во оваа снимка."
+    },
+    "tradingActivity": {
+      "empty": "Нема достапни податоци за обем на тргување.",
+      "volumeShare": "{{percent}}% од следениот 24ч обем"
+    },
+    "insights": {
+      "empty": "Нема ништо значајно за известување.",
+      "marketOverview": "Преглед на пазарот",
+      "whatStandsOut": "Што се издвојува",
+      "riskAndCaution": "Ризик и претпазливост"
+    },
+    "coinAnalysis": {
+      "title": "АИ анализа на криптовалута",
+      "noAnalysis": "Нема генерирана анализа.",
+      "generateError": "Не можеше да се генерира анализа: {{error}}",
+      "generating": "Се генерира анализа...",
+      "generate": "Генерирај анализа",
+      "skeletonLabel": "Се генерира анализа на криптовалутата",
+      "refreshError": "Не можеше да се освежи: {{error}}. Подолу е прикажана последната генерирана анализа.",
+      "coinHealth": "Здравје на криптовалутата",
+      "priceTrend": "Ценовен тренд",
+      "volatility": "Нестабилност",
+      "liquidity": "Ликвидност",
+      "marketTier": "Пазарна класа",
+      "trend": { "bullish": "Растечки", "bearish": "Опаѓачки", "neutral": "Неутрален", "unknown": "Непознат" },
+      "level": { "low": "Ниска", "medium": "Средна", "high": "Висока", "unknown": "Непозната" },
+      "tier": {
+        "large_cap": "Голема капитализација",
+        "mid_cap": "Средна капитализација",
+        "small_cap": "Мала капитализација",
+        "micro_cap": "Микро капитализација",
+        "unknown": "Непозната"
+      },
+      "sections": {
+        "interpretation": "АИ интерпретација",
+        "performance": "Денешна изведба",
+        "marketPosition": "Пазарна позиција",
+        "thingsToWatch": "Работи вредни за следење",
+        "risk": "Фактори на ризик"
+      }
+    },
+    "portfolioReview": {
+      "title": "АИ преглед на портфолио",
+      "disclaimer": "Едукативна анализа само на вашето симулирано портфолио за тргување — никогаш финансиски совет, и никогаш препорака да купите, продадете или задржите нешто.",
+      "noReview": "Нема генериран преглед на портфолиото.",
+      "generateError": "Не можеше да се генерира преглед: {{error}}",
+      "generating": "Се генерира преглед...",
+      "generate": "Генерирај преглед",
+      "skeletonLabel": "Се генерира преглед на портфолиото",
+      "refreshError": "Не можеше да се освежи: {{error}}. Подолу е прикажан последниот генериран преглед.",
+      "portfolioHealth": "Здравје на портфолиото",
+      "topHoldings": "Најголеми позиции",
+      "aiReview": "АИ преглед",
+      "diversification": "Диверзификација",
+      "concentration": "Концентрација",
+      "cashAllocation": "Готовинска распределба",
+      "largestHolding": "Најголема позиција",
+      "numberOfPositions": "Број на позиции",
+      "noHoldings": "Сè уште нема позиции.",
+      "ofPortfolio": "од портфолиото",
+      "value": "Вредност",
+      "healthLevel": {
+        "excellent": "Одлично",
+        "good": "Добро",
+        "balanced": "Балансирано",
+        "concentrated": "Концентрирано",
+        "high_risk": "Висок ризик",
+        "very_high_risk": "Многу висок ризик"
+      },
+      "sections": {
+        "strengths": "Силни страни",
+        "weaknesses": "Слаби страни",
+        "interestingObservations": "Интересни забелешки",
+        "riskFactors": "Фактори на ризик",
+        "educationalNotes": "Едукативни белешки"
+      }
+    }
+  },
+  "settings": {
+    "title": "Поставки",
+    "subtitle": "Прилагодете го изгледот и јазикот на CryptoMarketWarehouse.",
+    "appearance": {
+      "title": "Изглед",
+      "description": "Изберете како изгледа апликацијата. „Системски“ автоматски ја следи поставката на уредот.",
+      "light": "Светла",
+      "dark": "Темна",
+      "system": "Системски"
+    },
+    "language": {
+      "title": "Јазик",
+      "description": "Изберете го јазикот што се користи во апликацијата.",
+      "en": "English",
+      "mk": "Македонски"
+    }
+  }
+}

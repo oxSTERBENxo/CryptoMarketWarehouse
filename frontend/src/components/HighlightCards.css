@@ -1,0 +1,139 @@
+.highlight-cards {
+  --gain: var(--success);
+  --gain-bg: var(--success-bg);
+  --gain-bg-strong: rgba(22, 163, 74, 0.18);
+  --loss: var(--danger);
+  --loss-bg: var(--danger-bg);
+  --loss-bg-strong: rgba(185, 28, 28, 0.18);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1.2fr) repeat(3, 1fr);
+  gap: 16px;
+}
+
+:root[data-theme="dark"] .highlight-cards {
+  --gain-bg-strong: rgba(74, 222, 128, 0.22);
+  --loss-bg-strong: rgba(248, 113, 113, 0.22);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .highlight-cards {
+    --gain-bg-strong: rgba(74, 222, 128, 0.22);
+    --loss-bg-strong: rgba(248, 113, 113, 0.22);
+  }
+}
+
+.highlight-hero,
+.highlight-stat {
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  padding: 18px 20px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.highlight-hero:hover,
+.highlight-stat:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: 0 4px 8px rgba(15, 23, 42, 0.08), 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+:root[data-theme="dark"] .highlight-hero:hover,
+:root[data-theme="dark"] .highlight-stat:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35), 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .highlight-hero:hover,
+  :root:not([data-theme]) .highlight-stat:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35), 0 12px 28px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.highlight-hero {
+  background: linear-gradient(155deg, var(--gain-bg), var(--surface) 60%);
+  border-color: color-mix(in srgb, var(--gain) 35%, var(--border));
+}
+
+.highlight-hero--loss {
+  background: linear-gradient(155deg, var(--loss-bg), var(--surface) 60%);
+  border-color: color-mix(in srgb, var(--loss) 35%, var(--border));
+}
+
+.highlight-hero__label,
+.highlight-stat__label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.highlight-hero__coin,
+.highlight-stat__coin {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-h);
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+
+.highlight-hero__coin:hover,
+.highlight-stat__coin:hover {
+  text-decoration: underline;
+}
+
+.highlight-hero__value {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--gain);
+}
+
+.highlight-hero--loss .highlight-hero__value {
+  color: var(--loss);
+}
+
+.highlight-hero__subtitle,
+.highlight-stat__subtitle {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: var(--text);
+}
+
+.highlight-hero__empty,
+.highlight-stat__empty {
+  font-size: 13px;
+  color: var(--text);
+  margin: 8px 0 0;
+}
+
+.highlight-stat__value {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+@media (max-width: 1100px) {
+  .highlight-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .highlight-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-hero__value {
+    font-size: 26px;
+  }
+}

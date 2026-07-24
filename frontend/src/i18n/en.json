@@ -1,0 +1,613 @@
+{
+  "app": {
+    "title": "CryptoMarketWarehouse"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "marketLeaders": "Market Leaders",
+    "analyticsExplorer": "Analytics Explorer",
+    "portfolio": "Portfolio",
+    "settings": "Settings"
+  },
+  "common": {
+    "loading": "Loading...",
+    "retry": "Retry",
+    "refresh": "Refresh",
+    "noData": "No data available yet.",
+    "cancel": "Cancel",
+    "save": "Save",
+    "close": "Close",
+    "closeDialog": "Close dialog",
+    "delete": "Delete",
+    "deleting": "Deleting...",
+    "edit": "Edit",
+    "add": "Add",
+    "confirm": "Confirm",
+    "back": "Back",
+    "selectDateRange": "Select date range",
+    "somethingWentWrong": "Something went wrong.",
+    "openDetails": "Open {{name}} details",
+    "saving": "Saving...",
+    "create": "Create"
+  },
+  "table": {
+    "coin": "Coin",
+    "symbol": "Symbol",
+    "price": "Price",
+    "change24h": "24H Change",
+    "marketCap": "Market Cap",
+    "coingeckoRank": "CoinGecko Rank",
+    "volume24h": "24h Volume",
+    "rank": "Rank"
+  },
+  "dashboard": {
+    "overview": {
+      "title": "Market Overview",
+      "lastRefreshed": "Last Refreshed",
+      "coinsTracked": "Coins Tracked",
+      "totalMarketCap": "Total Market Cap",
+      "totalVolume": "Total 24h Volume"
+    },
+    "topMarketCap": {
+      "title": "Top Market Cap",
+      "caption": "Coins ranked by market capitalization"
+    },
+    "topVolume": {
+      "title": "Top Volume (24h)",
+      "caption": "Coins ranked by 24-hour trading volume"
+    },
+    "latestSnapshot": {
+      "title": "Latest Snapshot",
+      "caption": "Latest recorded snapshot for each tracked coin"
+    }
+  },
+  "coinSelect": {
+    "loading": "Loading coins...",
+    "searchPlaceholder": "Search coin by name or symbol...",
+    "noMatches": "No matching coins."
+  },
+  "takeSnapshot": {
+    "cta": "Take New Snapshot",
+    "fetching": "Fetching latest market data...",
+    "lastRefreshed": "Last refreshed",
+    "latestDailySnapshot": "Latest daily snapshot",
+    "intradaySnapshotsToday": "Intraday snapshots today",
+    "failedPrefix": "Snapshot failed: ",
+    "unknownError": "Unknown error.",
+    "partialErrors": "Snapshot completed with partial errors.",
+    "dailyAndIntradayAdded": "New daily and intraday snapshots added successfully.",
+    "intradayAdded": "New intraday snapshot added; today's daily snapshot already existed.",
+    "refreshed": "Market data refreshed."
+  },
+  "refreshMarketData": {
+    "cta": "Refresh Market Data",
+    "refreshing": "Refreshing...",
+    "updated": "✔ Updated successfully",
+    "noNewData": "No new market data available."
+  },
+  "recoveryBanner": {
+    "running_one": "Restoring {{total}} missing daily snapshot: {{done}} of {{total}} complete",
+    "running_other": "Restoring {{total}} missing daily snapshots: {{done}} of {{total}} complete",
+    "partialFailure_one": "Historical data recovery finished with {{count}} issue.",
+    "partialFailure_other": "Historical data recovery finished with {{count}} issues.",
+    "upToDate": "Historical market data is up to date."
+  },
+  "schedulerStatus": {
+    "title": "Data Collection",
+    "latestSnapshot": "Latest Warehouse Snapshot",
+    "automaticCollection": "Automatic Collection",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "nextRun": "Next Run"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "message": "The page you're looking for doesn't exist.",
+    "backLink": "Back to Dashboard"
+  },
+  "dateRange": {
+    "today": "Today",
+    "all": "All"
+  },
+  "coverageBar": {
+    "qualifyingCoins_one": "{{count}} qualifying coin",
+    "qualifyingCoins_other": "{{count}} qualifying coins"
+  },
+  "marketLeaders": {
+    "title": "Market Leaders",
+    "subtitle": "Real gains and losses computed from warehouse history — nothing estimated.",
+    "loading": "Loading market leaders...",
+    "snapshotTitle": "Market Snapshot",
+    "totalTrackedCoins": "Total Tracked Coins",
+    "latestUpdate": "Latest Update",
+    "todaysBestPerformer": "Today's Best Performer",
+    "todaysWorstPerformer": "Today's Worst Performer",
+    "averageMarketMovement": "Average Market Movement",
+    "noIntradayDataToday": "No intraday data yet today",
+    "highestGainer": "Highest Gainer",
+    "largestLoser": "Largest Loser",
+    "highestVolume": "Highest Volume",
+    "highestRanked": "Highest Ranked",
+    "mostVolatile": "Most Volatile",
+    "volume24hSubtitle": "24h trading volume",
+    "byMarketCap": "by market cap",
+    "volatilitySubtitle": "high-low swing over {{period}}",
+    "over": "over {{period}}",
+    "noDataForPeriod": "No data yet for this period.",
+    "noData": "No data yet.",
+    "noDataForPeriodShort": "No data available for this period.",
+    "topGainers": "Top Gainers",
+    "biggestLosers": "Biggest Losers",
+    "emptyToday": "No intraday observations loaded yet today. Run ingest_intraday_market_data.py, or wait for the next scheduled collection, then refresh.",
+    "emptyOther": "Not enough historical data in this range yet to rank gainers and losers.",
+    "periodLong": {
+      "today": "today",
+      "7d": "7 days",
+      "30d": "30 days",
+      "90d": "90 days",
+      "1y": "1 year"
+    }
+  },
+  "explorer": {
+    "title": "Analytics Explorer",
+    "subtitle": "Query historical warehouse data interactively — every figure computed from real loaded observations, nothing estimated.",
+    "recent": "Recent:",
+    "formLabel": "Analysis configuration",
+    "datePresetsLabel": "Date range presets",
+    "datePresets": {
+      "7d": "7D",
+      "30d": "30D",
+      "90d": "90D",
+      "1y": "1Y",
+      "allAvailable": "All Available"
+    },
+    "fields": {
+      "from": "From",
+      "to": "To",
+      "metric": "Metric",
+      "analysisType": "Analysis Type",
+      "sortBy": "Sort By",
+      "analysisDefault": "Analysis default",
+      "direction": "Direction",
+      "descending": "Descending",
+      "ascending": "Ascending",
+      "resultsPerPage": "Results per page"
+    },
+    "filters": {
+      "summary": "Optional filters",
+      "minMarketCap": "Min market cap ($)",
+      "maxMarketCap": "Max market cap ($)",
+      "minAvgVolume": "Min average volume ($)",
+      "minRank": "Best rank (min)",
+      "maxRank": "Worst rank (max)",
+      "minPrice": "Min price ($)",
+      "maxPrice": "Max price ($)"
+    },
+    "actions": {
+      "running": "Running...",
+      "runAnalysis": "Run Analysis",
+      "resetFilters": "Reset filters",
+      "exporting": "Exporting...",
+      "exportCsv": "Export CSV"
+    },
+    "errors": {
+      "bothDatesRequired": "Both dates are required.",
+      "fromAfterTo": "The From date must not be later than the To date.",
+      "thresholdRequired": "{{label}} is required for this analysis.",
+      "exportFailed": "Export failed."
+    },
+    "emptyBeforeRun": "Configure an analysis above and press Run Analysis to query the warehouse.",
+    "loadingRun": "Running analysis...",
+    "summary": {
+      "resultsFound": "Results Found",
+      "averageChange": "Average Change",
+      "largestIncrease": "Largest Increase",
+      "largestDecrease": "Largest Decrease",
+      "averageVolume": "Average Volume"
+    },
+    "emptyWithFilters": "No coins matched this analysis with the current optional filters applied. Try widening the date range, lowering the threshold, or removing some optional filters.",
+    "emptyNoFilters": "No coins matched this analysis in the selected date range. Try a wider range or a lower threshold.",
+    "metrics": {
+      "price": "Price",
+      "volume": "Volume",
+      "marketCapRank": "Market-Cap Rank",
+      "volatility": "Volatility"
+    },
+    "analyses": {
+      "priceIncreasedByPercent": {
+        "label": "Increased by at least X%",
+        "thresholdLabel": "Minimum increase (%)",
+        "thresholdPlaceholder": "e.g. 5"
+      },
+      "priceDecreasedByPercent": {
+        "label": "Decreased by at least X%",
+        "thresholdLabel": "Minimum decrease (%)",
+        "thresholdPlaceholder": "e.g. 10"
+      },
+      "priceIncreasedByAmount": {
+        "label": "Increased by at least $X",
+        "thresholdLabel": "Minimum increase ($)",
+        "thresholdPlaceholder": "e.g. 1000"
+      },
+      "priceDecreasedByAmount": {
+        "label": "Decreased by at least $X",
+        "thresholdLabel": "Minimum decrease ($)",
+        "thresholdPlaceholder": "e.g. 1000"
+      },
+      "priceTopN": { "label": "Top gainers" },
+      "priceBottomN": { "label": "Top losers" },
+      "volumeTopN": { "label": "Highest average volume" },
+      "rankImprovedBy": {
+        "label": "Rank improved by at least X places",
+        "thresholdLabel": "Minimum places improved",
+        "thresholdPlaceholder": "e.g. 3"
+      },
+      "rankDeclinedBy": {
+        "label": "Rank declined by at least X places",
+        "thresholdLabel": "Minimum places declined",
+        "thresholdPlaceholder": "e.g. 3"
+      },
+      "volatilityTopN": { "label": "Most volatile" },
+      "volatilityBottomN": { "label": "Least volatile" }
+    },
+    "sort": {
+      "percentChange": "% Change",
+      "dollarChange": "$ Change",
+      "endPrice": "End Price",
+      "avgVolume": "Average Volume",
+      "rankChange": "Rank Change",
+      "marketCap": "Market Cap",
+      "volatility": "Volatility"
+    },
+    "columns": {
+      "coin": "Coin",
+      "startPrice": "Start Price",
+      "endPrice": "End Price",
+      "dollarChange": "$ Change",
+      "percentChange": "% Change",
+      "avgVolume": "Avg Volume",
+      "startRank": "Start Rank",
+      "endRank": "End Rank",
+      "rankChange": "Rank Change",
+      "volatility": "Volatility",
+      "marketCap": "Market Cap"
+    },
+    "results": {
+      "heading": "Analysis results",
+      "caption": "Coins matching the selected analysis",
+      "openDetails": "Open {{name}} details for the analyzed period",
+      "showing": "Showing {{start}}–{{end}} of {{total}} results",
+      "previous": "← Previous",
+      "next": "Next →"
+    }
+  },
+  "portfolio": {
+    "tabsLabel": "Portfolio view",
+    "tabs": {
+      "paperTrading": "Paper Trading",
+      "manualHoldings": "Manual Holdings",
+      "aiPortfolioReview": "AI Portfolio Review"
+    },
+    "summary": {
+      "totalValue": "Total Value",
+      "totalCostBasis": "Total Cost Basis",
+      "unrealizedProfitLoss": "Unrealized Profit/Loss",
+      "profitPercent": "Profit %"
+    },
+    "holdingsTable": {
+      "caption": "Holdings in this portfolio",
+      "quantity": "Quantity",
+      "averageBuyPrice": "Average Buy Price",
+      "currentPrice": "Current Price",
+      "currentValue": "Current Value",
+      "profitLoss": "Profit/Loss",
+      "actions": "Actions",
+      "priceUnavailable": "Price unavailable"
+    },
+    "forms": {
+      "nameRequired": "Name is required.",
+      "renamePortfolio": "Rename Portfolio",
+      "createPortfolio": "Create Portfolio",
+      "name": "Name",
+      "descriptionOptional": "Description (optional)",
+      "selectCoin": "Select a coin.",
+      "quantityMustBePositive": "Quantity must be greater than 0.",
+      "priceMustBeNonNegative": "Average buy price must be zero or greater.",
+      "editHolding": "Edit Holding",
+      "addHolding": "Add Holding",
+      "averageBuyPriceUsd": "Average Buy Price (USD)"
+    },
+    "manual": {
+      "noPortfolioYet": "You don't have a portfolio yet.",
+      "rename": "Rename",
+      "deletePortfolio": "Delete Portfolio",
+      "holdings": "Holdings",
+      "noHoldingsYet": "No holdings yet. Add your first coin to start tracking value.",
+      "deletePortfolioConfirm": "Delete \"{{name}}\" and all of its holdings? This cannot be undone.",
+      "deleteHolding": "Delete Holding",
+      "deleteHoldingConfirm": "Remove {{name}} ({{symbol}}) from this portfolio?"
+    },
+    "paper": {
+      "disclaimer": "Simulated trading only — no real money is used, and nothing on this page is financial advice.",
+      "loadingAccount": "Loading paper trading account...",
+      "totalReturn": "Total return",
+      "buy": "Buy",
+      "sell": "Sell",
+      "resetAccount": "Reset Account",
+      "totalEquity": "Total Equity",
+      "availableCash": "Available Cash",
+      "investedAmount": "Invested Amount",
+      "realizedPl": "Realized P/L",
+      "unrealizedPl": "Unrealized P/L",
+      "bestWorstPerformer": "Best / Worst Performer",
+      "allocation": "Allocation",
+      "achievements": "Achievements",
+      "noHoldingsYet": "No holdings yet. Buy your first coin to start the simulation.",
+      "transactionHistory": "Transaction History",
+      "noTradesYet": "No trades yet.",
+      "resetConfirm": "This deletes all simulated transaction history and restores your starting cash balance. This cannot be undone.",
+      "cash": "Cash",
+      "holdingsCaption": "Current paper-trading holdings",
+      "averageCost": "Average Cost",
+      "buyMore": "Buy More",
+      "transactionsCaption": "Paper-trading transaction history",
+      "time": "Time",
+      "type": "Type",
+      "executionPrice": "Execution Price",
+      "totalValue": "Total Value"
+    },
+    "trade": {
+      "buyTitle": "Buy (Simulated)",
+      "sellTitle": "Sell (Simulated)",
+      "costExceedsCash": "Estimated cost exceeds available cash.",
+      "exceedsHoldings": "Exceeds current holdings.",
+      "currentPrice": "Current price",
+      "estimatedCost": "Estimated cost",
+      "estimatedProceeds": "Estimated proceeds",
+      "youHold": "You hold",
+      "submitting": "Submitting..."
+    },
+    "achievements": {
+      "firstTrade": { "label": "First Trade", "description": "Execute your first buy or sell." },
+      "diversified": { "label": "Diversified", "description": "Hold 3 or more different assets at once." },
+      "diamondHands": {
+        "label": "Diamond Hands",
+        "description": "Hold one asset for {{days}}+ days without fully selling it."
+      },
+      "profitablePortfolio": {
+        "label": "Profitable Portfolio",
+        "description": "Combined realized and unrealized profit is positive."
+      },
+      "fiveTrades": { "label": "Five Trades Completed", "description": "Execute 5 or more trades in total." },
+      "balancedPortfolio": {
+        "label": "Balanced Portfolio",
+        "description": "No single asset exceeds 50% of total equity."
+      }
+    },
+    "health": {
+      "title": "Portfolio Health Score",
+      "disclaimer": "An educational heuristic based on diversification and risk factors — not financial advice.",
+      "diversification": {
+        "label": "Diversification",
+        "detail_one": "{{count}} asset held (target: {{target}}+)",
+        "detail_other": "{{count}} assets held (target: {{target}}+)"
+      },
+      "concentration": {
+        "label": "Concentration Risk",
+        "detail": "Largest position is {{percent}}% of equity"
+      },
+      "cashReserve": {
+        "label": "Cash Reserve",
+        "detail": "{{percent}}% held as cash (healthy range: {{min}}-{{max}}%)"
+      },
+      "profitablePositions": {
+        "label": "Profitable Positions",
+        "detail": "{{profitable}} of {{total}} holdings in profit",
+        "noPositions": "No open positions"
+      },
+      "assetCount": {
+        "label": "Assets Held",
+        "detail": "{{count}} of {{target}}+ target assets"
+      }
+    }
+  },
+  "chart": {
+    "overTime": "{{title}} over time",
+    "insufficientData": "Not enough valid observations yet to plot a trend."
+  },
+  "coinDetails": {
+    "customRange": "Custom",
+    "loadingIntraday": "Loading today's intraday data...",
+    "loadingHistory": "Loading coin history...",
+    "latestDailySnapshot": "Latest Daily Snapshot",
+    "intraday": "Intraday",
+    "daily": "Daily",
+    "emptyToday": "No intraday observations yet today. Run ingest_intraday_market_data.py or wait for the next scheduled collection.",
+    "emptyDaily": "No historical data available for the selected range.",
+    "periodMin": "Period Min",
+    "periodMax": "Period Max",
+    "periodAverage": "Period Average",
+    "observations": "Observations",
+    "firstObservation": "First Observation",
+    "firstSnapshot": "First Snapshot",
+    "latestObservation": "Latest Observation",
+    "latestSnapshot": "Latest Snapshot",
+    "priceChartTitle": "Price (USD)",
+    "volumeChartTitle": "24h Volume",
+    "volumeChartIntradaySubtitle": "API-provided 24h volume observed at each timestamp, not volume traded per interval",
+    "priceSubtitle": "{{change}} over {{period}}",
+    "periods": {
+      "today": "today",
+      "custom": "the selected period",
+      "all": "all time",
+      "7d": "7 days",
+      "30d": "30 days",
+      "90d": "90 days",
+      "1y": "1 year"
+    },
+    "insufficientHistory": {
+      "onlyObservation": "Only observation on record",
+      "note_one": "Charts need at least 2 daily snapshots to plot a trend — {{count}} more day of history required. Run the backfill pipeline or wait for the next scheduled snapshot.",
+      "note_other": "Charts need at least 2 daily snapshots to plot a trend — {{count}} more days of history required. Run the backfill pipeline or wait for the next scheduled snapshot.",
+      "intradayNote": "Intraday charts need at least 2 observations collected today to plot a trend. Run ingest_intraday_market_data.py again shortly, or wait for the next scheduled collection."
+    },
+    "coverage": {
+      "todayNone": "No intraday observations collected yet today.",
+      "todayWithCount_one": "Intraday data collected from {{first}} to {{latest}} ({{formattedCount}} observation).",
+      "todayWithCount_other": "Intraday data collected from {{first}} to {{latest}} ({{formattedCount}} observations).",
+      "allAvailable_one": "Showing all {{formattedCount}} available daily observation.",
+      "allAvailable_other": "Showing all {{formattedCount}} available daily observations.",
+      "partial": "Only {{formattedCount}} of {{requested}} requested daily observations are currently available.",
+      "full": "Showing all {{requested}} requested daily observations."
+    }
+  },
+  "ai": {
+    "common": {
+      "refresh": "Refresh",
+      "tryAgain": "Try Again",
+      "provider": "Provider: {{provider}}",
+      "model": "Model: {{model}}",
+      "generatedAt": "Generated: {{time}}",
+      "generationTime": "Generation time: {{seconds}}s"
+    },
+    "marketSummary": {
+      "title": "AI Market Summary",
+      "noSummary": "No summary generated.",
+      "generateError": "Could not generate a summary: {{error}}",
+      "generating": "Generating summary...",
+      "generate": "Generate Summary",
+      "skeletonLabel": "Generating market summary",
+      "refreshError": "Could not refresh: {{error}}. Showing the last generated summary below.",
+      "topMovers": "Top Movers",
+      "tradingActivity": "Trading Activity",
+      "aiInsights": "AI Insights"
+    },
+    "overview": {
+      "direction": {
+        "positive": "Positive",
+        "negative": "Negative",
+        "mixed": "Mixed",
+        "neutral": "Neutral"
+      },
+      "avgChange24h": "Avg 24h Change",
+      "gainers": "Gainers",
+      "losers": "Losers",
+      "unchanged": "Unchanged",
+      "tracked": "Tracked",
+      "snapshot": "Snapshot",
+      "totalMarketCap": "Total Market Capitalization",
+      "totalVolume24h": "Total 24h Trading Volume",
+      "averageChange24h": "Average 24h Change",
+      "gainersVsLosers": "Gainers vs Losers"
+    },
+    "attention": {
+      "title": "Coins Attracting Attention",
+      "empty": "No coins currently stand out by these measures.",
+      "disclaimer": "Attention indicators describe current market activity and are not buying recommendations.",
+      "categories": {
+        "positive_momentum": "Strongest Positive Momentum",
+        "most_active": "Most Actively Traded",
+        "unusual_activity": "Unusual Activity"
+      }
+    },
+    "topMovers": {
+      "gainers": "Top Gainers",
+      "losers": "Top Losers",
+      "noGainers": "No gainers in this snapshot.",
+      "noLosers": "No losers in this snapshot."
+    },
+    "tradingActivity": {
+      "empty": "No trading volume data available.",
+      "volumeShare": "{{percent}}% of tracked 24h volume"
+    },
+    "insights": {
+      "empty": "Nothing notable to report.",
+      "marketOverview": "Market Overview",
+      "whatStandsOut": "What Stands Out",
+      "riskAndCaution": "Risk and Caution"
+    },
+    "coinAnalysis": {
+      "title": "AI Coin Analysis",
+      "noAnalysis": "No analysis generated.",
+      "generateError": "Could not generate an analysis: {{error}}",
+      "generating": "Generating analysis...",
+      "generate": "Generate Analysis",
+      "skeletonLabel": "Generating coin analysis",
+      "refreshError": "Could not refresh: {{error}}. Showing the last generated analysis below.",
+      "coinHealth": "Coin Health",
+      "priceTrend": "Price Trend",
+      "volatility": "Volatility",
+      "liquidity": "Liquidity",
+      "marketTier": "Market Tier",
+      "trend": { "bullish": "Bullish", "bearish": "Bearish", "neutral": "Neutral", "unknown": "Unknown" },
+      "level": { "low": "Low", "medium": "Medium", "high": "High", "unknown": "Unknown" },
+      "tier": {
+        "large_cap": "Large Cap",
+        "mid_cap": "Mid Cap",
+        "small_cap": "Small Cap",
+        "micro_cap": "Micro Cap",
+        "unknown": "Unknown"
+      },
+      "sections": {
+        "interpretation": "AI Interpretation",
+        "performance": "Today's Performance",
+        "marketPosition": "Market Position",
+        "thingsToWatch": "Things Worth Watching",
+        "risk": "Risk Factors"
+      }
+    },
+    "portfolioReview": {
+      "title": "AI Portfolio Review",
+      "disclaimer": "Educational analysis of your simulated paper-trading portfolio only — never financial advice, and never a recommendation to buy, sell, or hold anything.",
+      "noReview": "No portfolio review generated.",
+      "generateError": "Could not generate a review: {{error}}",
+      "generating": "Generating review...",
+      "generate": "Generate Review",
+      "skeletonLabel": "Generating portfolio review",
+      "refreshError": "Could not refresh: {{error}}. Showing the last generated review below.",
+      "portfolioHealth": "Portfolio Health",
+      "topHoldings": "Top Holdings",
+      "aiReview": "AI Review",
+      "diversification": "Diversification",
+      "concentration": "Concentration",
+      "cashAllocation": "Cash Allocation",
+      "largestHolding": "Largest Holding",
+      "numberOfPositions": "Number of Positions",
+      "noHoldings": "No holdings yet.",
+      "ofPortfolio": "of portfolio",
+      "value": "Value",
+      "healthLevel": {
+        "excellent": "Excellent",
+        "good": "Good",
+        "balanced": "Balanced",
+        "concentrated": "Concentrated",
+        "high_risk": "High Risk",
+        "very_high_risk": "Very High Risk"
+      },
+      "sections": {
+        "strengths": "Strengths",
+        "weaknesses": "Weaknesses",
+        "interestingObservations": "Interesting Observations",
+        "riskFactors": "Risk Factors",
+        "educationalNotes": "Educational Notes"
+      }
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Personalize how CryptoMarketWarehouse looks and reads.",
+    "appearance": {
+      "title": "Appearance",
+      "description": "Choose how the app looks. \"System\" follows your device setting automatically.",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "language": {
+      "title": "Language",
+      "description": "Choose the language used throughout the app.",
+      "en": "English",
+      "mk": "Македонски"
+    }
+  }
+}

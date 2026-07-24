@@ -1,0 +1,37 @@
+.ai-insights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.ai-insights__section h4 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  color: var(--text-h);
+}
+
+.ai-insights__section ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.ai-insights__section li {
+  margin: 2px 0;
+}
+
+.ai-insights__empty {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text);
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .ai-insights {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}

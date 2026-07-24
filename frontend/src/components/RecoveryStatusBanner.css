@@ -1,0 +1,27 @@
+.recovery-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+}
+
+.recovery-banner--running {
+  border-color: var(--accent);
+  color: var(--text-h);
+}
+
+.recovery-banner--warning {
+  border-color: var(--danger);
+  color: var(--danger);
+  background: var(--danger-bg);
+}
+
+.recovery-banner--success {
+  color: var(--success);
+}
