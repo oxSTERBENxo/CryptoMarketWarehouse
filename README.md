@@ -98,5 +98,4 @@ same `python -m ...` commands without the `.venv\Scripts\` prefix.
 
 ## License
 
-No license file is currently included. This project was developed for a university course and
-is intended for educational use.
+Released under the [MIT License](LICENSE). This project was developed for a university course.
