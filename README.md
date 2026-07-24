@@ -75,6 +75,10 @@ python -m venv .venv
 .venv\Scripts\python -m etl.ingest_market_data
 .venv\Scripts\python -m etl.load_warehouse
 
+# Optional: backfill 30 days of history for a few major coins so charts
+# aren't empty on first run (takes a few minutes)
+.venv\Scripts\python -m etl.backfill_market_history --days 30 --coins bitcoin,ethereum,solana,cardano,dogecoin
+
 # 5. Run the backend (http://localhost:8000, API docs at /docs)
 .venv\Scripts\python -m uvicorn main:app --reload --port 8000
 
